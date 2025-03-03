@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
+      <title>Commbitz AirIndia</title>
       <body className="antialiased">
         <Main />
         <NextScript />
