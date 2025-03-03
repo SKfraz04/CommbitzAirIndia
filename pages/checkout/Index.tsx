@@ -8,7 +8,7 @@ export default function Checkout() {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-gray-100 p-6">
+      <div className="min-h-screen text-black bg-gray-100 p-6">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Left Section - Package Options */}
           <div className="lg:col-span-2 bg-white rounded-lg p-6">
