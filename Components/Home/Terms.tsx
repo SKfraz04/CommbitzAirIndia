@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Terms = () => {
@@ -69,10 +70,12 @@ const Terms = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4">
             {destinations.map((destination, index) => (
               <div key={index} className="flex flex-col items-center p-4 text-black bg-[#F9F4EC73] rounded-lg hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 flex items-center justify-center mb-2">
-                  <span className="text-2xl">{destination.flag}</span>
-                </div>
-                <p className="text-sm text-center">{destination.name}</p>
+                <Link href="/checkout">
+                  <div className="w-12 h-12 flex items-center justify-center mb-2">
+                    <span className="text-2xl">{destination.flag}</span>
+                  </div>
+                  <p className="text-sm text-center">{destination.name}</p>
+                </Link>
               </div>
             ))}
           </div>
