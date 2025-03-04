@@ -70,7 +70,7 @@ const Terms = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4">
             {destinations.map((destination, index) => (
               <div key={index} className="flex flex-col items-center p-4 text-black bg-[#F9F4EC73] rounded-lg hover:shadow-md transition-shadow">
-                <Link href="/checkout">
+                <Link href="/payment">
                   <div className="w-12 h-12 flex items-center justify-center mb-2">
                     <span className="text-2xl">{destination.flag}</span>
                   </div>
